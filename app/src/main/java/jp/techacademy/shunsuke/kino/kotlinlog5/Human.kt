@@ -2,10 +2,7 @@ package jp.techacademy.shunsuke.kino.kotlinlog5
 
 import android.util.Log
 
-open class Human: Animal,Thinkable {
-    // 引数付きコンストラクタ
-    constructor(name: String, age: Int, hobby: String): super(name, age, hobby) {
-    }
+open class Human(name: String, age: Int, var hobby: String): Animal(name, age), Thinkable {
 
     // メソッド
     override fun say() {
